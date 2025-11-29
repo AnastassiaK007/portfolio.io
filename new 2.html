@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо — Анастасія Кулаженко</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #222;
+            color: #fff;
+            position: sticky;
+            top: 0;
+        }
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        /* --- ABOUT --- */
+        #about .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        #about img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            background: #ccc;
+        }
+        /* --- SKILLS --- */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        .skills-list div {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        /* --- PROJECTS --- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #222;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        /* --- CONTACTS --- */
+        .contacts a {
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #fff;
+            margin-top: 40px;
+        }
+        @media(max-width: 700px) {
+            header nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Анастасія Кулаженко</div>
+        <nav>
+            <a href="#about">Про мене</a>
+            <a href="#skills">Навички</a>
+            <a href="#projects">Проєкти</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </header>
+
+    <section id="about" class="container">
+        <h2>Про мене</h2>
+        <div class="about-content">
+			<img src="file:///D:/teaching/Nastya/photo_2025-11-29_14-22-41.jpg" alt="Моє фото" />
+            <div>
+                <h3>Анастасія Кулаженко</h3>
+                <p>Я студентка 4 курсу спеціальності “Комп’ютерна інженерія” у Фаховому коледжі нафти і газу м. Івано-Франківськ. Мені подобається формат віддаленої роботи, який дозволяє гнучко планувати свій день, і саме ІТ дає можливість легко будувати такий шлях. Найбільше мене цікавить дизайн, і в майбутньому я б хотіла працювати саме в цій сфері, створюючи сучасні та зручні інтерфейси.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Навички</h2>
+        <div class="skills-list">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Основи JavaScript</div>
+            <div>Figma</div>
+            <div>Canva</div>
+            <div>Photoshop / GIMP</div>
+            <div>C++</div>
+            <div>Python</div>
+            <div>Java</div>
+            <div>SQL</div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Проєкти</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Практична робота 1</h3>
+                <p>Опис роботи або коротка характеристика.</p>
+                <a href="#">Переглянути</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="container">
+        <h2>Контакти</h2>
+        <div class="contacts">
+            <a href="mailto:example@gmail.com">example@gmail.com</a>
+            <a href="https://github.com/">Мій GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Анастасія Кулаженко
+    </footer>
+</body>
+</html>
